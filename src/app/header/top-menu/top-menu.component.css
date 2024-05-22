@@ -1,0 +1,12 @@
+.top-menu {
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  gap: 16px;
+  text-decoration: none;
+  list-style: none;
+  background-color: #333;
+  padding-right: 30px;
+}
