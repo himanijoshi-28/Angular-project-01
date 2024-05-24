@@ -1,0 +1,24 @@
+<div class="search-container">
+  <input
+    type="text"
+    placeholder="Search products..."
+    [(ngModel)]="searchText"
+  />
+  <!-- truthy and falsy value -->
+  <button
+    type="submit"
+    [ngClass]="{
+      btn: true,
+      '.btn-search': searchText,
+      'btn-search-diabled': !searchText
+    }"
+    [disabled]="searchText != ''"
+  >
+    Search
+  </button>
+</div>
+<div class="ekart-search-result-for">
+  <p *ngIf="searchText != ''">
+    <strong>Search Result For:</strong>{{ searchText }}
+  </p>
+</div>

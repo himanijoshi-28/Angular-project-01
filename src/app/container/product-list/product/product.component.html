@@ -1,0 +1,21 @@
+<div class="product-card">
+  <img [src]="product.image" [alt]="product.name" class="product-image" />
+  <div *ngIf="product.discount" class="discount-badge">
+    {{ product.discount }}% OFF
+  </div>
+  <div class="product-details">
+    <h2 class="product-name">{{ product.name }}</h2>
+    <p class="product-brand">{{ product.brand }}</p>
+    <p class="product-price">${{ product.price.toFixed(2) }}</p>
+    <p class="product-colour">{{ product.colour }}</p>
+    <p
+      [ngClass]="{
+        'in-stock': product.in_stock,
+        'out-of-stock': !product.in_stock
+      }"
+      class="product-stock"
+    >
+      {{ product.in_stock ? "In Stock" : "Out of Stock" }}
+    </p>
+  </div>
+</div>

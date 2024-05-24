@@ -1,6 +1,5 @@
-<div class="nav-links">
-  <a href="#">Home</a>
-  <a href="#">Products</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+<div class="menu">
+  <div *ngFor="let menu of mainMenuItems" class="">
+    <a href="#">{{ menu }}</a>
+  </div>
 </div>

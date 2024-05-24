@@ -1,0 +1,12 @@
+<app-filter
+  [all]="totalProductCount"
+  [instock]="totalProductInstock"
+  [outOfStock]="totalProductOutOfStock"
+></app-filter>
+<div class="product-list">
+  <!-- -->
+  <app-product
+    *ngFor="let product of product"
+    [product]="product"
+  ></app-product>
+</div>

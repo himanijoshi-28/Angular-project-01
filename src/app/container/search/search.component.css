@@ -1,0 +1,32 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="text"] {
+  padding: 6px;
+  width: 60%;
+  /* border: none; */
+  border-radius: 4px;
+}
+.btn {
+  padding: 6px 10px;
+  background-color: #1d1c1c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-search-diabled {
+  cursor: not-allowed/none;
+  opacity: 0.3;
+}
+.btn:hover {
+  background-color: #777;
+}
+.ekart-search-result-for {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

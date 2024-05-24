@@ -1,5 +1,5 @@
 <div class="ekart-product-container">
-  <img [src]="product.pImage" />
+  <!-- <img [src]="product.pImage" />
 
   <p>Name :{{ product.name }}</p>
   <p>Price :{{ "$" + product.price }}</p>
@@ -12,10 +12,12 @@
         : "Not in stock"
     }}
   </p>
-  <button [disabled]="!(product.inStock > 0)">Buy Now</button>
+  <button [disabled]="!(product.inStock > 0)">Buy Now</button> -->
   <!-- <input bind-placeholder="name" (input)="onEventChange($event)" />
   {{ name }} -->
-  <button (click)="reduceOne()">-</button>
+  <!-- <button (click)="reduceOne()">-</button>
   <span>{{ addToCart }}</span>
-  <button (click)="addOne()">+</button>
+  <button (click)="addOne()">+</button> -->
+  <app-search></app-search>
+  <app-product-list></app-product-list>
 </div>

@@ -6,11 +6,27 @@ import { Header } from './header/header.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { MainMenuComponent } from './header/main-menu/main-menu.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { Container } from './container/conatiner.component.ts';
+import { SearchComponent } from './container/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './container/product-list/product-list.component';
+import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 @NgModule({
-  declarations: [AppComponent, Header, TopHeaderComponent, TopMenuComponent, MainMenuComponent, ProductListComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    Header,
+    TopHeaderComponent,
+    TopMenuComponent,
+    MainMenuComponent,
+    Container,
+    SearchComponent,
+    ProductListComponent,
+    ProductComponent,
+    FilterComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
